@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f1f5f8;
+}
+
+.Card{
+    border-radius:10px ;
+    background-color: white;
+    padding: 1em 2em;
+    
+}
+img{
+    width: 200px;
+}
+
+.CardList{
+    width: 90vw;
+    max-width: 970px;
+    margin: 5rem auto;
+    display : grid;
+    gap:2rem;
+}
+
+button{
+    background-color: blueviolet;
+    color:white;
+}
+
+@media screen and (min-width: 768px) {
+    .CardList{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
